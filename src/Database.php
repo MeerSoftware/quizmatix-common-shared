@@ -17,7 +17,7 @@ class Database
     {
         // loads .env file
         $dotenv = new Dotenv();
-        $dotenv->load(__DIR__ . '/../.env');
+        $dotenv->load('.env');
 
         // get database type (ex: MySQL or SQLite)
         $db_type = $_ENV["DB_TYPE"];
