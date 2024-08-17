@@ -5,7 +5,6 @@ namespace Quizmatix;
 use PDOException;
 use PDOStatement;
 use PDO;
-use Symfony\Component\Dotenv\Dotenv;
 
 class Database
 {
@@ -15,10 +14,6 @@ class Database
     // constructor
     public function __construct()
     {
-        // loads .env file
-        $dotenv = new Dotenv();
-        $dotenv->load('.env');
-
         // get database type (ex: MySQL or SQLite)
         $db_type = $_ENV["DB_TYPE"];
 
