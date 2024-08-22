@@ -10,7 +10,7 @@ $_VERSION = "v1.039";
 $_REAL_VERSION = $_VERSION;
 
 // release type
-$_RELEASE_TYPE = "release";
+$_RELEASE_TYPE = "debug";
 
 // if release type is debug set version to dynamic style for load everytime assets files
 if($_RELEASE_TYPE === "debug") {
